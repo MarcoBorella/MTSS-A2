@@ -62,17 +62,17 @@ import org.mockito.Mockito;
     @Test
     public void testolastampadelnumero9_conmockito(){
 
-        String pattern = " __  ___   ___ \n" +
-        "|  | \\  \\ /  / \n" +
-        "|  |  \\  V  /  \n" +
-        "|  |   >   <   \n" +
-        "|  |  /  .  \\  \n" +
-        "|__| /__/ \\__\\ ";
+        String pattern = "___   ___ ____    ____  __   __   __  \n" +
+             "\\  \\ /  / \\   \\  /   / |  | |  | |  | \n" +
+             " \\  V  /   \\   \\/   /  |  | |  | |  | \n" +
+             "  >   <     \\      /   |  | |  | |  | \n" +
+             " /  .  \\     \\    /    |  | |  | |  | \n" +
+             "/__/ \\__\\     \\__/     |__| |__| |__| ";
 
 
     try(MockedStatic<IntegerToRoman> utilities = Mockito.mockStatic(IntegerToRoman.class)){
-        utilities.when(()->IntegerToRoman.convert(9)).thenReturn("IX"); 
-        assertEquals(pattern, RomanPrinter.print(9));
+        utilities.when(()->IntegerToRoman.convert(18)).thenReturn("XVIII"); 
+        assertEquals(pattern, RomanPrinter.print(18));
 
     }}
     
