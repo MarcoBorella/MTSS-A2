@@ -72,15 +72,23 @@ public class RomanPrinter{
       "|  '--'  |",
       "|_______/ "
     };
-
-  HashMap<Character, String[]> map = new HashMap<>();
-  map.put('I', I);
-  map.put('V', V);
-  map.put('X', X);
-  map.put('L', L);
-  map.put('C', C);
-  map.put('D', D);
-
+    String[] M = {
+      ".___  ___.",
+      "|   \\/   |",
+      "|  \\  /  |",
+      "|  |\\/|  |",
+      "|  |  |  |",
+      "|__|  |__|"
+    };
+    
+    HashMap<Character, String[]> map = new HashMap<>();
+    map.put('I', I);
+    map.put('V', V); 
+    map.put('X', X); 
+    map.put('L', L);
+    map.put('C', C);
+    map.put('D', D); 
+    map.put('M', M); 
 
   String[] ris = new String[I.length]; 
   for(int i = 0; i<I.length; i++){ris[i] = "";}
