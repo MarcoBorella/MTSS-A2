@@ -2,7 +2,7 @@
 
 ![Checkstyle](.github/badges/checkstyle-result.svg)
 
-![example workflow](https://github.com/MarcoBorella/MTSS-A2/actions/workflows/build.yml/badge.svg&kill_cache=1)          
+![example workflow](https://github.com/MarcoBorella/MTSS-A2/actions/workflows/build.yml/badge.svg?branch=main&kill_cache=1)          
 
 # Roman Number Converter
 
