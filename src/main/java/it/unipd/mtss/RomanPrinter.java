@@ -46,10 +46,20 @@ public class RomanPrinter{
         "/__/ \\__\\ "
     };
 
+    String[] L = {
+        " __      ",
+        "|  |     ",
+        "|  |     ",
+        "|  |     ",
+        "|  `----.",
+        "|_______|"
+    };
+
   HashMap<Character, String[]> map = new HashMap<>();
   map.put('I', I);
   map.put('V', V);
   map.put('X', X);
+  map.put('L', L);
 
   String[] ris = new String[I.length]; 
   for(int i = 0; i<I.length; i++){ris[i] = "";}
