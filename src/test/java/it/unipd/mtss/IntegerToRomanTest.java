@@ -152,4 +152,10 @@ public class IntegerToRomanTest {
         public void testInputNonValido() {
             IntegerToRoman.convert(1001);
     }  
+
+    @Test
+    public void testNumber999(){
+        String result = IntegerToRoman.convert(999);
+        assertEquals(result, "CMXCIX");
+    }
 }

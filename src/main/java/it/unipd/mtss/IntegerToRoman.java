@@ -8,17 +8,17 @@ package it.unipd.mtss;
 public class IntegerToRoman {
 
     public static String convert(int number) throws IllegalArgumentException {
-        String s = "L'intero deve essere compreso tra 0 e 500";
-        if(number < 0 || number > 500) {
+        String s = "L'intero deve essere compreso tra 0 e 1000";
+        if(number < 0 || number > 1000) {
             throw new IllegalArgumentException(s);
         }
 
         String roman = "";
 
         String[] numeriRomani =
-         {"D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+         {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         int[] numeriArabi =
-        {500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
 
         int i=0;
 
