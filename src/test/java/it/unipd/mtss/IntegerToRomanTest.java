@@ -136,6 +136,18 @@ public class IntegerToRomanTest {
         assertEquals(result, "XCIX");
     }
 
+    @Test
+    public void testNumber344(){
+        String result = IntegerToRoman.convert(378);
+        assertEquals(result, "CCCLXXVIII");
+    }
+
+    @Test
+    public void testNumber499(){
+        String result = IntegerToRoman.convert(499);
+        assertEquals(result, "CDXCIX");
+    }
+
     @Test(expected = IllegalArgumentException.class)
         public void testInputNonValido() {
             IntegerToRoman.convert(1001);
