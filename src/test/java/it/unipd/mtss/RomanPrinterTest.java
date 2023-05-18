@@ -40,6 +40,23 @@ import org.mockito.Mockito;
         utilities.when(()->IntegerToRoman.convert(3)).thenReturn("III"); 
         assertEquals(pattern, RomanPrinter.print(3));
 
-    };}
+    }}
+
+    @Test
+    public void testolastampadelnumero4_conmockito(){
+
+        String pattern = " __  ____    ____ \n" +
+             "|  | \\   \\  /   / \n" +
+             "|  |  \\   \\/   /  \n" +
+             "|  |   \\      /   \n" +
+             "|  |    \\    /    \n" +
+             "|__|     \\__/     ";
+
+
+    try(MockedStatic<IntegerToRoman> utilities = Mockito.mockStatic(IntegerToRoman.class)){
+        utilities.when(()->IntegerToRoman.convert(4)).thenReturn("IV"); 
+        assertEquals(pattern, RomanPrinter.print(4));
+
+    }}
     
 }
