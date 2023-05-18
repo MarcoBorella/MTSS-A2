@@ -58,5 +58,22 @@ import org.mockito.Mockito;
         assertEquals(pattern, RomanPrinter.print(4));
 
     }}
+
+    @Test
+    public void testolastampadelnumero9_conmockito(){
+
+        String pattern = " __  ___   ___ \n" +
+        "|  | \\  \\ /  / \n" +
+        "|  |  \\  V  /  \n" +
+        "|  |   >   <   \n" +
+        "|  |  /  .  \\  \n" +
+        "|__| /__/ \\__\\ ";
+
+
+    try(MockedStatic<IntegerToRoman> utilities = Mockito.mockStatic(IntegerToRoman.class)){
+        utilities.when(()->IntegerToRoman.convert(9)).thenReturn("IX"); 
+        assertEquals(pattern, RomanPrinter.print(9));
+
+    }}
     
 }

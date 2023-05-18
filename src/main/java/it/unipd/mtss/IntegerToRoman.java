@@ -8,13 +8,21 @@ package it.unipd.mtss;
 public class IntegerToRoman {
 
   public static String convert(int number) throws IllegalArgumentException {
-    String s = "L'intero deve essere compreso tra 0 e 6";
-    if(number < 0 || number > 6) {
+    String s = "L'intero deve essere compreso tra 0 e 10";
+    if(number < 0 || number > 10) {
         throw new IllegalArgumentException(s);
     }
 
     String roman = "";
 
+    while (number >= 10) {
+      roman = roman + "X";
+      number = number - 10;
+    }
+    while (number >= 9) {
+      roman = roman + "IX";
+      number = number - 9;
+    }
     while (number >= 5) {
       roman += "V";
       number = number - 5;

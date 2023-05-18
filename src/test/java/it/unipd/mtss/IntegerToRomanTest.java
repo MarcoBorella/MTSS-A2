@@ -52,6 +52,27 @@ public class IntegerToRomanTest {
         assertEquals(result, "VI");
     }
 
+    @Test
+    public void testNumber8()
+    {
+        String result = IntegerToRoman.convert(8);
+        assertEquals(result, "VIII");
+    }
+
+    @Test
+    public void testNumber9()
+    {
+        String result = IntegerToRoman.convert(9);
+        assertEquals(result, "IX");
+    }
+
+    @Test
+    public void testNumber10()
+    {
+        String result = IntegerToRoman.convert(10);
+        assertEquals(result, "X");
+    }
+
     @Test(expected = IllegalArgumentException.class)
         public void testInputNonValido() {
             IntegerToRoman.convert(1001);
