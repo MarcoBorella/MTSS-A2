@@ -47,12 +47,21 @@ public class RomanPrinter{
     };
 
     String[] L = {
-        " __      ",
-        "|  |     ",
-        "|  |     ",
-        "|  |     ",
-        "|  `----.",
-        "|_______|"
+        " __       ",
+        "|  |      ",
+        "|  |      ",
+        "|  |      ",
+        "|  `----. ",
+        "|_______| "
+    };
+
+    String[] C = {
+      "  ______  ",
+      " /      | ",
+      "|  ,----' ",
+      "|  |      ",
+      "|  `----. ",
+      " \\______| "
     };
 
   HashMap<Character, String[]> map = new HashMap<>();
@@ -60,6 +69,7 @@ public class RomanPrinter{
   map.put('V', V);
   map.put('X', X);
   map.put('L', L);
+  map.put('C', C);
 
   String[] ris = new String[I.length]; 
   for(int i = 0; i<I.length; i++){ris[i] = "";}
